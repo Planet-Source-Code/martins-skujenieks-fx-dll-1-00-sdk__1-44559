@@ -1,0 +1,409 @@
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1257">
+<meta name=ProgId content=FrontPage.Editor.Document>
+<meta name=Generator content="Microsoft FrontPage 5.0">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./fxTextOut_files/filelist.xml">
+<title>FX.DLL SDK</title>
+</head>
+
+<body lang=EN-US link="#333399" vlink="#666666" style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<table border=0 cellspacing=0 cellpadding=0 width=360 style='width:270.0pt;
+ border-collapse:collapse;mso-padding-alt:3.0pt 3.0pt 3.0pt 3.0pt'>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  font-family:Verdana'>fxTextOut</span><span style='font-size:8.5pt;font-family:
+  Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>Function writes a character string with the specified
+  color at the specified location, using the currently selected font.<o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>If the function succeeds, the return value is 1 (true);
+  if fails, the return value is 0 (false). <o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+  font-family:Verdana'>Declaration</span></b><span style='font-size:8.5pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>Declare Function <b>fxTextOut</b> Lib
+  &quot;fx.dll&quot; ( _</span><span style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>DC</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>X</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>Y</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>Text</b> As String, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>Color</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>Alignment</b> As Long) As Long</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+  font-family:Verdana'>Parameters</span></b><span style='font-size:8.5pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <table border=0 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;
+   border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm'>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>DC</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Handle to the destination DC<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:29.25pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:29.25pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>X</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:29.25pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the logical x-coordinate of the reference
+    point that will be used to align the string<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>Y</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the logical y-coordinate of the reference
+    point that will be used to align the string<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>Text</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the text to write<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>Color</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the RGB color of the text<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>Alignment</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies text alignment code<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:9.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:9.75pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:9.75pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana;
+  mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";
+  color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+  font-family:Verdana'>Definitions</span></b><span style='font-size:8.5pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>Text Alignment Options:<o:p></o:p></span></p>
+  <table border=0 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;
+   border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm'>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+    font-family:"Courier New"'>TA_NOUPDATECP</span></b><span style='font-size:
+    8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>The current position is not updated after each text
+    output call. The reference point is passed to the text output function<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:29.25pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:29.25pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+    font-family:"Courier New"'>TA_UPDATECP</span></b><span style='font-size:
+    8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:29.25pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>The current position is updated after each text output
+    call. The current position is used as the reference point<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+    font-family:"Courier New"'>TA_LEFT</span></b><span style='font-size:8.5pt;
+    font-family:Verdana'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>The reference point will be on the left edge of the
+    bounding rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+    font-family:"Courier New"'>TA_RIGHT</span></b><span style='font-size:8.5pt;
+    font-family:Verdana'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>The reference point will be on the right edge of the
+    bounding rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+    font-family:"Courier New"'>TA_CENTER</span></b><span style='font-size:8.5pt;
+    font-family:Verdana'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>The reference point will be aligned horizontally with
+    the center of the bounding rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+    font-family:"Courier New"'>TA_TOP</span></b><span style='font-size:8.5pt;
+    font-family:Verdana'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>The reference point will be on the top edge of the
+    bounding rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+    font-family:"Courier New"'>TA_BOTTOM</span></b><span style='font-size:8.5pt;
+    font-family:Verdana'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>The reference point will be on the bottom edge of the
+    bounding rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+    font-family:"Courier New"'>TA_BASELINE</span></b><span style='font-size:
+    8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>The reference point will be on the base line of the
+    text<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:9.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:9.75pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:9.75pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>Vertical Text Alignment Options:<o:p></o:p></span></p>
+  <table border=0 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;
+   border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm'>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+    font-family:"Courier New"'>VTA_LEFT</span></b><span style='font-size:8.5pt;
+    font-family:Verdana'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+    font-family:"Courier New"'>VTA_RIGHT</span></b><span style='font-size:8.5pt;
+    font-family:Verdana'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+    font-family:"Courier New"'>VTA_CENTER</span></b><span style='font-size:
+    8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+    font-family:"Courier New"'>VTA_TOP</span></b><span style='font-size:8.5pt;
+    font-family:Verdana'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+    font-family:"Courier New"'>VTA_BOTTOM</span></b><span style='font-size:
+    8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+    font-family:"Courier New"'>VTA_BASELINE</span></b><span style='font-size:
+    8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+    </td>
+    <td style='padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:10.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana;
+  mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";
+  color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=LV><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

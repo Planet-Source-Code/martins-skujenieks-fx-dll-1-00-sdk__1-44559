@@ -1,0 +1,78 @@
+
+
+
+ Thank You for downloading FX.DLL 1.00 SDK!
+
+ This SDK (Software Developer's Kit) will provide
+ You with all neccessary knowledge on how to use 
+ FX.DLL with most efficiency.
+ I have included not only full description on each
+ of the FX.DLL functions, but also three sample
+ programs with source code.
+
+ You can vote for the submission at
+ http://www.planet-source-code.com/vb/scripts/ShowCode.asp?lngWId=1&txtCodeId=44559
+
+
+--------------------------------------------------------
+ Setup
+--------------------------------------------------------
+
+ To setup FX.DLL 1.00 SDK simply run SETUP.BAS batch
+ program. It will copy following files:
+ 1) "fx.pkg" to "Release\fx.dll"
+ 2) "fx.pkg" to "Samples\FX DLL Presentation\fx.dll"
+ 3) "fx.pkg" to "Samples\Window Effects\fx.dll"
+ 4) "fx.pkg" to "Samples\Hello World\fx.dll"
+ 5) "fxsdk.pkg" to "SDK\fxsdk.exe
+
+ Setup program will not copy FX.DLL to System directory.
+
+ If You are afraid that SETUP.BAS file contains 
+ hazardous script, You can copy the files manually or
+ open the SETUP.BAS with text editor and get sure that
+ script is 100% safe :)
+
+
+--------------------------------------------------------
+ About
+--------------------------------------------------------
+
+ I started developing FX.DLL in November 2002 so its
+ about 4 months of pure development, programming,
+ testing and debugging. 
+ I have written it with Microsoft Visual C++ 6.0 and 
+ the DLL is running in Win32 subsystem. This means that
+ it has no dependencies and is compatible with all
+ Windows platforms.
+ The DLL is written specially for developers 
+ working within Visual Basic.
+ If we compare the speed of FX library with similar
+ code written in Visual Basic You will notice that 
+ FX.DLL may even be 20x (!!!) faster. 
+ I am planning more future updates and this is only the
+ first release. 
+ So expierience the FX technology.
+
+
+--------------------------------------------------------
+ SDK
+--------------------------------------------------------
+
+ SDK consists of a core program and several HTML format
+ files. Use FXSDK.EXE in SDK directory to view SDK 
+ articles.
+
+ 
+--------------------------------------------------------
+ Sample Projects
+--------------------------------------------------------
+
+ I added three sample projects to this submission. 
+ Two of them are almost uncommented :( but the third - 
+ Hello World is fully commented 2D Engine based on
+ FX technology.
+ 
+ 
+ 
+  

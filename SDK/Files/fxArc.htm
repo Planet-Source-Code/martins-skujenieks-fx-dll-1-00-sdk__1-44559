@@ -1,0 +1,270 @@
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1257">
+<meta name=ProgId content=FrontPage.Editor.Document>
+<meta name=Generator content="Microsoft FrontPage 5.0">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./fxArc_files/filelist.xml">
+<title>FX.DLL SDK :: fxArc</title>
+</head>
+
+<body lang=EN-US link="#333399" vlink="#666666" style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<table border=0 cellspacing=0 cellpadding=0 width=360 style='width:270.0pt;
+ border-collapse:collapse;mso-padding-alt:3.0pt 3.0pt 3.0pt 3.0pt'>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  font-family:Verdana'>fxArc</span><span style='font-size:8.5pt;font-family:
+  Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>Draws an elliptical arc.<o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>If the function succeeds, the return value is 1 (true);
+  if fails, the return value is 0 (false).<o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+  font-family:Verdana'>Declaration</span></b><span style='font-size:8.5pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>Declare Function <b>fxArc</b> Lib
+  &quot;fx.dll&quot; ( _</span><span style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>DC</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>LeftRect</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>TopRect</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>RightRect</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>BottomRect</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>XStartArc</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>YStartArc</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>XEndArc</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>YEndArc</b> As Long) As Long</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+  font-family:Verdana'>Parameters</span></b><span style='font-size:8.5pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <table border=0 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;
+   border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm' height=87>
+   <tr style='height:10.5pt'>
+    <td width="30%" valign=top style='width:30.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>DC</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="79%" valign=top style='width:79.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana'>Identifies
+    the device context where drawing takes place</span><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="30%" valign=top style='width:30.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>LeftRect</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:"Courier New"'> </span><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="79%" valign=top style='width:79.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the logical x-coordinate of the upper-left
+    corner of the bounding <o:p></o:p></span></p>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:29.25pt'>
+    <td width="30%" valign=top style='width:30.0%;padding:0cm 0cm 0cm 0cm;
+    height:29.25pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>TopRect</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:"Courier New"'> </span><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="79%" valign=top style='width:79.0%;padding:0cm 0cm 0cm 0cm;
+    height:29.25pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the logical y-coordinate of the upper-left
+    corner of the bounding <o:p></o:p></span></p>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:29.25pt'>
+    <td width="30%" valign=top style='width:30.0%;padding:0cm 0cm 0cm 0cm;
+    height:29.25pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>RightRect</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:"Courier New"'> </span><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="79%" valign=top style='width:79.0%;padding:0cm 0cm 0cm 0cm;
+    height:29.25pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the logical x-coordinate of the lower-right
+    corner of the bounding <o:p></o:p></span></p>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:19.5pt'>
+    <td width="30%" valign=top style='width:30.0%;padding:0cm 0cm 0cm 0cm;
+    height:19.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>BottomRect</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:"Courier New"'> </span><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="79%" valign=top style='width:79.0%;padding:0cm 0cm 0cm 0cm;
+    height:19.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the logical y-coordinate of the lower-right
+    corner of the bounding <o:p></o:p></span></p>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:19.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:19.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>XStartArc</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="79%" valign=top style='width:79.0%;padding:0cm 0cm 0cm 0cm;
+    height:19.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the logical x-coordinate of the&nbsp; ending
+    point of the radial line defining the starting point of the arc<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="30%" valign=top style='width:30.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>YStartArc</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="79%" valign=top style='width:79.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the logical y-coordinate of the&nbsp; ending
+    point of the radial line defining the starting point of the arc<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:29.25pt'>
+    <td width="30%" valign=top style='width:30.0%;padding:0cm 0cm 0cm 0cm;
+    height:29.25pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>XEndArc</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="79%" valign=top style='width:79.0%;padding:0cm 0cm 0cm 0cm;
+    height:29.25pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the logical x-coordinate of the ending point
+    of the radial line defining the ending point of the arc<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:.75pt'>
+    <td width="30%" valign=top style='width:30.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><b style='mso-bidi-font-weight:
+    normal'><span lang=LV style='font-size:8.5pt;font-family:"Courier New"'>YEndArc</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="79%" valign=top style='width:79.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt;mso-line-height-alt:.75pt'><span
+    style='font-size:8.5pt;font-family:Verdana'>Specifies the logical
+    y-coordinate of the ending point of the radial line defining the ending
+    point of the arc<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:.75pt'>
+    <td width="30%" valign=top style='width:30.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:1.0pt;mso-bidi-font-size:8.5pt;font-family:Verdana;
+    mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";
+    color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="79%" valign=top style='width:79.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:1.0pt;mso-bidi-font-size:8.5pt;font-family:Verdana;
+    mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";
+    color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana;
+  mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";
+  color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=LV><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

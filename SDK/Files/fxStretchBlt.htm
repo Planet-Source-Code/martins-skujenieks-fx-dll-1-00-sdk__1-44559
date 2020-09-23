@@ -1,0 +1,559 @@
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1257">
+<meta name=ProgId content=FrontPage.Editor.Document>
+<meta name=Generator content="Microsoft FrontPage 5.0">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./fxStretchBlt_files/filelist.xml">
+<title>FX.DLL SDK</title>
+</head>
+
+<body lang=EN-US link="#333399" vlink="#666666" style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<table border=0 cellspacing=0 cellpadding=0 width=360 style='width:270.0pt;
+ border-collapse:collapse;mso-padding-alt:3.0pt 3.0pt 3.0pt 3.0pt'>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  font-family:Verdana'>fxStretchBlt</span><span style='font-size:8.5pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>Function copies a bitmap from a source rectangle into a
+  destination rectangle, stretching or compressing the bitmap to fit the
+  dimensions of the destination rectangle, if necessary. Windows stretches or
+  compresses the bitmap according to the stretching mode currently set in the
+  destination device context.<o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>If the function succeeds, the return value is 1 (true);
+  if fails, the return value is 0 (false). <o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+  font-family:Verdana'>Declaration</span></b><span style='font-size:8.5pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>Declare Function <b>fxStretchBlt</b> Lib
+  &quot;fx.dll&quot; ( _</span><span style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>DestDC</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>DestX</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>DestY</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>DestWidth</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>DestHeight</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>SrcDC</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>SrcX</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>SrcY</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>SrcWidth</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>SrcHeight</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>RasterOperation</b> As Long) As Long</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+  font-family:Verdana'>Parameters</span></b><span style='font-size:8.5pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <table border=0 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;
+   border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm'>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>DestDC</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Handle to the destination DC<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:29.25pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:29.25pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>DestX</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:29.25pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the x-coordinate, in logical units, of the
+    upper-left corner of the destination rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>DestY</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the y-coordinate, in logical units, of the
+    upper-left corner of the destination rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>DestWidth</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the width, in logical units, of the
+    destination rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>DestHeight</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the height, in logical units, of the
+    destination rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>SrcDC</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Handle to the source DC<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:19.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:19.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>SrcX</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:19.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the x-coordinate, in logical units, of the
+    upper-left corner of the source rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>SrcY</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the y-coordinate, in logical units, of the
+    upper-left corner of the source rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>SrcWidth</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the width, in logical units, of the source
+    rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>SrcHeight</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the height, in logical units, of the source
+    rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>RasterOperation</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana'>Specifies
+    a raster-operation code</span><span lang=LV style='font-size:8.5pt;
+    font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+    "Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:9.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:9.75pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:9.75pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana;
+  mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";
+  color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+  font-family:Verdana'>Definitions</span></b><span style='font-size:8.5pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana'>Ternary
+  Raster Operations: <o:p></o:p></span></p>
+  <table border=0 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;
+   border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm' height=93>
+   <tr style='height:19.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:19.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>SRCCOPY</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:19.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Copies the source rectangle directly to the
+    destination rectangle<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><b style='mso-bidi-font-weight:
+    normal'><span lang=LV style='font-size:8.5pt;font-family:"Courier New"'>SRCPAINT</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:.75pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt;mso-line-height-alt:.75pt'><span
+    style='font-size:8.5pt;font-family:Verdana'>Combines the colors of the
+    source and destination rectangles by using the Boolean OR operator<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:29.25pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:29.25pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>SRCAND</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:29.25pt'>
+    <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana'>Combines
+    the colors of the source and destination rectangles by using the Boolean
+    AND operator</span><span lang=LV style='font-size:8.5pt;font-family:Verdana;
+    mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";
+    color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:29.25pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:29.25pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>SRCINVERT</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:29.25pt'>
+    <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana'>Combines
+    the colors of the source and destination rectangles by using the Boolean
+    XOR operator</span><span lang=LV style='font-size:8.5pt;font-family:Verdana;
+    mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";
+    color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><b style='mso-bidi-font-weight:
+    normal'><span lang=LV style='font-size:8.5pt;font-family:"Courier New"'>SRCERASE</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana'>Combines the inverted colors of
+    the destination rectangle with the colors of the source rectangle by using
+    the Boolean AND operator</span><span lang=LV style='font-size:8.5pt;
+    font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+    "Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><b style='mso-bidi-font-weight:
+    normal'><span lang=LV style='font-size:8.5pt;font-family:"Courier New"'>NOTSRCCOPY</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:"Courier New"'> </span><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana'>Copies the inverted source
+    rectangle to the destination</span><span lang=LV style='font-size:8.5pt;
+    font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+    "Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><b style='mso-bidi-font-weight:
+    normal'><span lang=LV style='font-size:8.5pt;font-family:"Courier New"'>NOTSRCERASE</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana'>Combines the colors of the
+    source and destination rectangles by using the Boolean OR operator and then
+    inverts the resultant color</span><span lang=LV style='font-size:8.5pt;
+    font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+    "Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><b style='mso-bidi-font-weight:
+    normal'><span lang=LV style='font-size:8.5pt;font-family:"Courier New"'>MERGECOPY</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana'>Merges the colors of the source
+    rectangle with the specified pattern by using the Boolean AND operator</span><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><b style='mso-bidi-font-weight:
+    normal'><span lang=LV style='font-size:8.5pt;font-family:"Courier New"'>MERGEPAINT</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana'>Merges the colors of the
+    inverted source rectangle with the colors of the destination rectangle by
+    using the Boolean OR operator</span><span lang=LV style='font-size:8.5pt;
+    font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+    "Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><b style='mso-bidi-font-weight:
+    normal'><span lang=LV style='font-size:8.5pt;font-family:"Courier New"'>PATCOPY</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana'>Copies the specified pattern
+    into the destination bitmap</span><span lang=LV style='font-size:8.5pt;
+    font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+    "Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><b style='mso-bidi-font-weight:
+    normal'><span lang=LV style='font-size:8.5pt;font-family:"Courier New"'>PATPAINT</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana'>Combines the colors of the pattern
+    with the colors of the inverted source rectangle by using the Boolean OR
+    operator. The result of this operation is combined with the colors of the
+    destination rectangle by using the Boolean OR operator</span><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><b style='mso-bidi-font-weight:
+    normal'><span lang=LV style='font-size:8.5pt;font-family:"Courier New"'>PATINVERT</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana'>Combines the colors of the
+    specified pattern with the colors of the destination rectangle by using the
+    Boolean XOR operator</span><span lang=LV style='font-size:8.5pt;font-family:
+    Verdana;mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+    "Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><b style='mso-bidi-font-weight:
+    normal'><span lang=LV style='font-size:8.5pt;font-family:"Courier New"'>DSTINVERT</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana'>Inverts the destination
+    rectangle</span><span lang=LV style='font-size:8.5pt;font-family:Verdana;
+    mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";
+    color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><b style='mso-bidi-font-weight:
+    normal'><span lang=LV style='font-size:8.5pt;font-family:"Courier New"'>BLACKNESS</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana'>Fills the destination rectangle
+    using the color associated with index zero in the physical palette (This
+    color is black for the default physical palette)</span><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><b style='mso-bidi-font-weight:
+    normal'><span lang=LV style='font-size:8.5pt;font-family:"Courier New"'>WHITENESS</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana'>Fills the destination rectangle
+    using the color associated with index one in the physical palette (This
+    color is white for the default physical palette)</span><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:9.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:9.75pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:9.75pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana;
+  mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";
+  color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=LV><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
