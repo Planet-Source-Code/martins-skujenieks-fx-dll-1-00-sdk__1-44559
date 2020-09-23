@@ -1,0 +1,228 @@
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1257">
+<meta name=ProgId content=FrontPage.Editor.Document>
+<meta name=Generator content="Microsoft FrontPage 5.0">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./fxStretchBltMode_files/filelist.xml">
+<title>FX.DLL SDK</title>
+</head>
+
+<body lang=EN-US link="#333399" vlink="#666666" style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<table border=0 cellspacing=0 cellpadding=0 width=360 style='width:270.0pt;
+ border-collapse:collapse;mso-padding-alt:3.0pt 3.0pt 3.0pt 3.0pt'>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  font-family:Verdana'>fxStretchBltMode</span><span style='font-size:8.5pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>Function returns or sets the bitmap stretching mode in
+  the specified device context.<br>
+  If the function succeeds, the return value is the stretching mode or nonzero
+  value; if fails, the return value is zero.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+  font-family:Verdana'>Declaration</span></b><span style='font-size:8.5pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>Declare Function <b>fxStretchBltMode</b> Lib
+  &quot;fx.dll&quot; ( _</span><span style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>DC</b> As Long, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>Mode</b> As Long) As Long</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+  font-family:Verdana'>Parameters</span></b><span style='font-size:8.5pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <table border=0 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;
+   border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm'>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>DC</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Identifies the device context;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:29.25pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:29.25pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>Mode</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:29.25pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies the stretching mode; if (Mode = 0) function
+    returns current stretching mode<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:9.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:9.75pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:9.75pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana;
+  mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";
+  color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.5pt'>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:13.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+  font-family:Verdana'>Definitions</span></b><span style='font-size:8.5pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana'>Stretching
+  Modes: <o:p></o:p></span></p>
+  <table border=0 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;
+   border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm'>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>NULL</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies that function must return current stretching
+    mode<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:29.25pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:29.25pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>BLACKONWHITE</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:29.25pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Performs a Boolean AND operation using the color
+    values for the eliminated and existing pixels. If the bitmap is a
+    monochrome bitmap, this mode preserves black pixels at the expense of white
+    pixels<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:9.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:9.75pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>WHITEONBLACK</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:9.75pt'>
+    <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana'>Performs
+    a Boolean OR operation using the color values for the eliminated and
+    existing pixels. If the bitmap is a monochrome bitmap, this mode preserves
+    white pixels at the expense of black pixels</span><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:9.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:9.75pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>COLORONCOLOR</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:9.75pt'>
+    <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana'>Deletes
+    the pixels. This mode deletes all eliminated lines of pixels without trying
+    to preserve their information</span><span lang=LV style='font-size:8.5pt;
+    font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+    "Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:9.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:9.75pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>HALFTONE</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:9.75pt'>
+    <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana'>Maps
+    pixels from the source rectangle into blocks of pixels in the destination
+    rectangle. The average color over the destination block of pixels
+    approximates the color of the source pixels.<br>
+    After setting the </span><span lang=LV style='font-size:8.5pt;font-family:
+    "Courier New"'>HALFTONE</span><span lang=LV style='font-size:8.5pt;
+    font-family:Verdana'> stretching mode, an application must call the </span><span
+    lang=LV style='font-size:8.5pt;font-family:"Courier New"'>SetBrushOrgEx</span><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana'> function to set the
+    brush origin. If it fails to do so, brush misalignment occurs</span><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana;
+  mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";
+  color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=LV><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1257">
+<meta name=ProgId content=FrontPage.Editor.Document>
+<meta name=Generator content="Microsoft FrontPage 5.0">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./fxHSLtoRGB_files/filelist.xml">
+<title>FX.DLL SDK</title>
+</head>
+
+<body lang=EN-US link="#333399" vlink="#666666" style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<table border=0 cellspacing=0 cellpadding=0 width=360 style='width:270.0pt;
+ border-collapse:collapse;mso-padding-alt:3.0pt 3.0pt 3.0pt 3.0pt'>
+ <tr style='height:28.5pt'>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt;height:28.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  font-family:Verdana'>fxHSLtoRGB</span><span style='font-size:8.5pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:29.25pt'>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt;height:29.25pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>Function calculates and returns the RGB color from given
+  H, S, L values <o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:9.75pt'>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:9.75pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+  font-family:Verdana'>Declaration</span></b><span style='font-size:8.5pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:51.75pt'>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt;height:51.75pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>Declare Function <b>fxHSLtoRGB</b> Lib
+  &quot;fx.dll&quot; ( _</span><span style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>H</b> As Double, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>S</b> As Double, _</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:"Courier New"'>ByVal <b>L</b> As Double) As Long</span><span
+  style='font-size:8.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+  font-family:Verdana'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:11.25pt'>
+  <td style='border:solid #CACACA .75pt;background:#FAFAFA;padding:3.0pt 3.0pt 3.0pt 3.0pt;
+  height:11.25pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.5pt;
+  font-family:Verdana'>Parameters</span></b><span style='font-size:8.5pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:51.75pt'>
+  <td style='padding:3.0pt 3.0pt 3.0pt 3.0pt;height:51.75pt'>
+  <table border=0 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;
+   border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm' height=37>
+   <tr style='height:.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:.75pt'>
+    <p class=MsoNormal style='mso-line-height-alt:.75pt'><b style='mso-bidi-font-weight:
+    normal'><span lang=LV style='font-size:8.5pt;font-family:"Courier New"'>H</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:.75pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt;mso-line-height-alt:.75pt'><span
+    style='font-size:8.5pt;font-family:Verdana'>Specifies hue value (double
+    value between 0 and 1)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:10.5pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:10.5pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>S</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:10.5pt'>
+    <p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:8.5pt;
+    font-family:Verdana'>Specifies saturation value (double value between 0 and
+    1)<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:9.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:9.75pt'>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=LV
+    style='font-size:8.5pt;font-family:"Courier New"'>L</span></b><span
+    lang=LV style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:
+    "Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td width="95%" style='width:95.0%;padding:0cm 0cm 0cm 0cm;height:9.75pt'>
+    <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana'>Specifies
+    luminiscency value (double value between 0 and 1)</span><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='height:9.75pt'>
+    <td width="35%" valign=top style='width:35.0%;padding:0cm 0cm 0cm 0cm;
+    height:9.75pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:8.5pt;font-family:Verdana;mso-fareast-font-family:"Arial Unicode MS";
+    mso-bidi-font-family:"Arial Unicode MS";color:black'><o:p></o:p></span></p>
+    </td>
+    <td style='padding:0cm 0cm 0cm 0cm;height:9.75pt'>
+    <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span lang=LV
+    style='font-size:10.0pt'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span lang=LV style='font-size:8.5pt;font-family:Verdana;
+  mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS";
+  color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=LV><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
